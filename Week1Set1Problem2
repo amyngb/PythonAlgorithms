@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jun 11 14:06:37 2017
+
+@author: bedinghausa
+"""
+
+#Assume s is a string of lower case characters.
+
+#Write a program that prints the number of times the string 'bob' occurs in s. /
+#For example, if s = 'azcbobobegghakl', then your program should print
+#Number of times bob occurs is: 2
+
+
+s = input('Enter a string: ')
+numBob = 0
+i = 0
+while i <= len(s):
+   temp = s[i:i + 3] 
+   if temp == 'bob':
+       numBob += 1
+   i += 1 
+        
+print('Number of times bob occurs is: ' + str(numBob))
